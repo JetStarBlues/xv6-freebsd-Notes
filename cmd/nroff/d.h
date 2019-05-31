@@ -9,5 +9,20 @@
  *	@(#)d.h	4.3 (Berkeley) 4/18/91
  */
 
-struct d {filep op; int dnl,dimac,ditrap,ditf,alss,blss,nls,mkline,
-		maxl,hnl,curd;} d[NDI], *dip;
+struct d {
+
+	filep op;
+
+	int   dnl,
+	      dimac,
+	      ditrap,
+	      ditf,
+	      alss,
+	      blss,
+	      nls,
+	      mkline,
+	      maxl,
+	      hnl,
+	      curd;
+
+} d[ NDI ], *dip;

@@ -1,0 +1,57 @@
+___ Kernel _____________________________________________________
+
+System calls added (see usys.S)
+
+	. fstat
+	. uptime
+	. sleep
+	. lseek
+	. ioctl
+	. fchdir
+
+
+System calls modified
+
+	. 'exit' and 'wait' so that they can exchange values...
+		. 11:15
+		. Something about 'make' checking exit value of
+		  program to know whether it succeeded or failed...
+
+	. error values returned
+
+
+lib/xv6
+
+	. Minimal additions to get the BSD libraries to work...
+
+
+Misc
+
+	. Larger maximum file size (from 61K? to 267K)
+	. Bigger process stack (from 4K to 12K)
+
+	. Devices added? (serial, disk0, disk1, null, zeros)
+
+
+
+___ User space _________________________________________________
+
+cmd/simple
+
+	. described in one file
+
+cmd/sh
+
+	. Unix Version 7 shell
+
+cmd/wish
+
+	. Custom shell
+	. Features:
+		. history (ctrl-p)
+		. metacharacter expansion (ex. ls /bin/w*)
+		. tab completion
+
+cmd/levee
+
+	. Simple vi

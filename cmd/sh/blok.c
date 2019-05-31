@@ -6,7 +6,7 @@
  *
  */
 
-#include	"defs.h"
+#include "defs.h"
 #define	BUSY 01
 #define	busy(x)	(Rcheat((x)->word) & BUSY)
 #include "db_blok.h"

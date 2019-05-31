@@ -110,6 +110,8 @@ main(argc, argv)
 	if (fclose(stdout))
 		err(1, "stdout: %s", strerror(errno));
 	exit(rval);
+
+	return -1;  // JK, workaround compiler error [-Wreturn-type]
 }
 
 void

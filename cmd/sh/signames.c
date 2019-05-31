@@ -1,1 +1,0 @@
-Memory/signames.c
